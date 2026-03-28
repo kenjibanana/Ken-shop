@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KENSHOP</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #fdfdfd;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #e0aaff;
+    }
+
+    .hero {
+      background: url('jmCtdS97&id=A4E85C1E77AD153455C4367106C362148D0EABFE&thid=OIP.jmCtdS97omNkI_4xE3CElQHaFj&mediaurl=https%3a%2f%2funiquekiosk.com%2fwp-content%2fuploads%2f2022%2f11%2fbarber-shop-2-scaled.jpg&exph=1536&expw=2048&q=barbershop+picture&FORM=IRPRST&ck=207D8217E6711EAAA854B9EBA2BF9E68&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services, .about, .gallery, .contact {
+      margin-bottom: 3rem;
+    }
+
+    .services h2, .about h2, .gallery h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #111;
+    }
+
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .service {
+      flex: 1 1 250px;
+      background: #f4f4f4;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Elegant Hair Salon</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h2>Style. Elegance. Confidence.</h2>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Haircut & Styling</h3>
+        <p>Modern cuts tailored to your personality.</p>
+      </div>
+      <div class="service">
+        <h3>Coloring</h3>
+        <p>Vibrant shades and highlights for a fresh look.</p>
+      </div>
+      <div class="service">
+        <h3>Treatments</h3>
+        <p>Revitalize your hair with nourishing treatments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>At Elegant Hair Salon, we believe that beauty begins with confidence. Our team of experienced stylists is dedicated to creating looks that enhance your natural charm while keeping up with the latest trends.</p>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://images.PD7&sca_esv=c5726b7179094972&udm=2&biw=1558&bih=776&ei=AnHHafeBJfb02roP1OazkAY&oq=barber+shop+img&gs_lp=Egtnd3Mtd2l6LWltZyIPYmFyYmVyIHNob3AgaW1nKgIIADIGEAAYChgeSNYcUIQIWMwQcAJ4AJABAJgBpAGgAeAEqgEDMC40uAEByAEA-AEBmAIGoAL4BMICBhAAGAcYHsICCBAAGAcYChgewgIFEAAYgATCAgQQABgewgIGEAAYCBgewgIKEAAYgAQYQxiKBZgDAIgGAZIHAzIuNKAHtxGyBwMwLjS4B-4EwgcFMC4xLjXIBxOACAA&sclient=gws-wiz-img#sv=CAMSVhoyKhBlLW1CZ0N4NzlzRHMwcWZNMg5tQmdDeDc5c0RzMHFmTToOX1MwVkVLdzlxVHpzUE0gBCocCgZtb3NhaWMSEGUtbUJnQ3g3OXNEczBxZk0YADABGAcg5NXMoghKCBABGAEgASgB alt="Salon work 1">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Salon work 2">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="Salon work 3">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Salon work 4">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>📍 123 Elegance Street, Davao City</p>
+      <p>📞 (123) 456-7890</p>
+      <p>✉️ info@eleganthairsalon.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Elegant Hair Salon | Designed with style</p>
+  </footer>
+</body>
+</html>
